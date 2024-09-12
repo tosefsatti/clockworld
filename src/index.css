@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(33, 180, 156);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+.clock-container{
+  
+  backdrop-filter: blur(50px);
+  padding: 5px 10px;
+  border: 2px solid hsl(0, 21%, 82%);
+  border-radius: 5px;
+  color: black;
+  margin-bottom: 20px;
+
+
+}
+.clock{
+  color: aliceblue;
+  font-size: 3rem;
+  font-weight: bold;
+  font-weight: 700;
+  text-shadow: 3px 3px 3px hsl(203, 16%, 69%);
+}
+
+.stop-watch{
+  
+  border: 2px solid hsl(0, 25%, 90%);
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: hsl(187, 33%, 86%);
+
+}
+
+.display-time{
+  font-size: 2.5rem;
+  font-weight: 700;
+ text-align: center;
+ margin-bottom: 10px;
+ color: rgb(63, 56, 56);
+ text-shadow: 2px 2px 2px hsl(0, 25%, 90%);
+}
+
+.control{
+  display: flex;
+  justify-content: space-around;
+}
+.control button{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 4px;
+  font-weight: bold;
+  border-radius: 20px;
+
+
+}
+.start-btn{
+  background-color: hsl(120, 98%, 52%);
+}
+.start-btn:hover{
+  background-color: hsl(120, 78%, 40%);
+}
+.stop-btn{
+  background-color: hsl(0, 77%, 59%);
+
+}
+.stop-btn:hover{
+  background-color: hsl(0, 85%, 51%);
+
+}
+.reset-btn{
+  background-color: hsl(240, 71%, 72%);
+}
+.reset-btn:hover{
+  background-color: hsl(240, 84%, 46%);
+}
+
+@media (max-width: 567px) {
+  .stop-watch {
+    padding: 5px 10px;
+  }
+}
